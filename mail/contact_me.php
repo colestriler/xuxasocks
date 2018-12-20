@@ -20,10 +20,25 @@ $message = strip_tags(htmlspecialchars($_POST['message']));
    
 // Create the email and send the message
 $to = 'colestriler@gmail.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
+
 $email_subject = "Xuxa Socks Contact Form:  $name";
+
 $email_body = "You have received a new message from your website contact form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email_address\n\nPhone: $phone\n\nMessage:\n$message";
-$headers = "From: colestriler@gmail.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
+
+$headers = "From: noreply@xuxasocks.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
+
 $headers .= "Reply-To: $email_address";   
-mail($to,$email_subject,$email_body,$headers);
-return true;         
+
+if ($_POST['submit']) {
+    if (mail($to,$email_subject,$email_body,$headers)) { 
+        echo '<p>Your message has been sent!</p>';
+    } else { 
+        echo '<p>Something went wrong, go back and try again!</p>'; 
+    }
+}
+
+
+
+return true;  
+
 ?>
