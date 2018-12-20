@@ -1,8 +1,6 @@
 <?php
 
-// added this... not sure if it works
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+
 
 // Check for empty fields
 if(empty($_POST['name'])      ||
@@ -15,8 +13,6 @@ if(empty($_POST['name'])      ||
    return false;
    }
    
-method="post"
-<input type="text" name="name">
 $name = strip_tags(htmlspecialchars($_POST['name']));
 $email_address = strip_tags(htmlspecialchars($_POST['email']));
 $phone = strip_tags(htmlspecialchars($_POST['phone']));
