@@ -29,15 +29,7 @@ $headers = "From: noreply@xuxasocks.com\n"; // This is the email address the gen
 
 $headers .= "Reply-To: $email_address";   
 
-if ($_POST['submit']) {
-    if (mail($to,$email_subject,$email_body,$headers)) { 
-        echo '<p>Your message has been sent!</p>';
-    } else { 
-        echo '<p>Something went wrong, go back and try again!</p>'; 
-    }
-}
-
-
+mail($to,$email_subject,$email_body,$headers);
 
 return true;  
 
