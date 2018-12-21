@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Contact</title>
+    <title>Survey</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -56,8 +56,8 @@
     <div class="container">
 
       <!-- Page Heading/Breadcrumbs -->
-      <h1 class="mt-4 mb-3">Contact Us...
-        <small>It Takes Seconds</small>
+      <h1 class="mt-4 mb-3">Survey
+        <small></small>
       </h1>
 
       <ol class="breadcrumb">
@@ -73,15 +73,15 @@
       <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
       <div class="row">
         <div class="col-lg-8 mb-4">
-          <h3>This is a good time to ask questions.</h3>
+          <h3>Tell me how you really feel.</h3>
 
 
-          <form method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLScmFHLfCjwHF7gXfPvHbd2opMcW_uMAJlTE3qpFx37xpHdvzg/formResponse" 
+          <form method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLSeqZS93roSc9uCNrwjN3UnDD-0qE5ogqMeAbgnJhVDosF_9nA/viewform?vc=0&c=0&w=1" 
           name="sentMessage" id=”contact_form”>
             
             <div class="control-group form-group">
               <div class="controls">
-                <label>Full Name:</label>
+                <label>Order Number:</label>
                 <input type="text" class="form-control" id="”name_input”" required data-validation-required-message="Please enter your name." name='entry.516789297'>
                 <p class="help-block"></p>
               </div>
@@ -90,28 +90,60 @@
             
             <div class="control-group form-group">
               <div class="controls">
-                <label>Phone Number:</label>
-                <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number." name=''>
+                <label>I am a:  (i.e. business, school, club, etc.)</label>
+                <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number." name='entry.344842996'>
               </div>
             </div>
             
             <div class="control-group form-group">
               <div class="controls">
-                <label>Email Address:</label>
-                <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address." name='entry.203452124' name='entry.521368370'>
+                <label>On a scale from 1-10, rate your overall experience with Xuxa Socks.</label>
+                <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address." name='entry.203452124' name='entry.203452124'>
               </div>
             </div>
+
+
             
             <div class="control-group form-group">
               <div class="controls">
-                <label>Message:</label>
+                <label>Why did you give the above rating?</label>
+                <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none" name='entry.521368370'></textarea>
+              </div>
+            </div>
+
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>On a scale from 1-10, how happy are you with your purchase from Xuxa Socks?</label>
+                <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address." name='entry.203452124' name='entry.346627883'>
+              </div>
+            </div>
+
+            
+
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Why did you give the above rating?</label>
                 <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none" name='entry.1872807675'></textarea>
               </div>
-            
             </div>
+
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>What are three things you liked?</label>
+                <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none" name='entry.2078790203'></textarea>
+              </div>
+            </div>
+
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>What are three things you would change if you could?</label>
+                <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none" name='entry.399454426'></textarea>
+              </div>
+            </div>
+
             <div id="success"></div>
             <!-- For success/fail messages -->
-            <button type="submit" class="btn btn-primary" id="sendMessageButton">Send Message</button>
+            <button type="submit" class="btn btn-primary" id="sendMessageButton">Submit Survey</button>
           </form>
         </div>
 
